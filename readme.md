@@ -1,5 +1,6 @@
 # Structure
 
+```
 root-folder
     packages - source code for each package
         package-one
@@ -13,6 +14,7 @@ root-folder
     vendor
     composer.json - the main composer file
     index.php
+```
 
 PackageOne is loaded using composer path
 PackageTwo is loaded using composer autoload
