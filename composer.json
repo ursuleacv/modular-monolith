@@ -1,0 +1,23 @@
+{
+    "name": "kangaroo/modular-monolith",
+    "type": "project",
+    "description": "",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "vlucas/phpdotenv": "^5.3",
+        "kangaroo/my-package": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kangaroo\\App\\": "app/",
+            "Kangaroo\\PackageTwo\\": "packages/my-second-package/src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/my-package"
+        }
+    ]
+}
